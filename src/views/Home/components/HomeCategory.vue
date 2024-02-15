@@ -1,6 +1,6 @@
 <template>
-    <div style="height:1500px">
-        <h1>我是 Home 页</h1>
+    <div>
+        <h1>左侧分类</h1>
     </div>
 </template>
 
