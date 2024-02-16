@@ -17,7 +17,7 @@ const router = createRouter({
           component: Home
         },
         {
-          path: 'Category',
+          path: 'category/:id',
           component: Category
         }
       ]
@@ -30,7 +30,12 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('@/views/Login/index.vue')
     }
-  ]
+  ],
+  scrollBehavior() {
+    return {
+      top: 0
+    }
+  }
 })
 
 export default router
