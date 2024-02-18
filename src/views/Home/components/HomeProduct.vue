@@ -1,5 +1,3 @@
-
-
 <script setup lang="ts">
 import HomePanel from './HomePanel.vue'
 import { getGoodsAPI } from '@/apis/home'
@@ -10,7 +8,7 @@ const goodsProduct = ref([])
 const getGoods = async () => {
     // 解构写法
     const { result } = await getGoodsAPI()
-    console.log(result)
+    // console.log(result)
     goodsProduct.value = result
 }
 onMounted(() => getGoods())

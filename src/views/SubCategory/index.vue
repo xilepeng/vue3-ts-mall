@@ -42,7 +42,7 @@ const load = async () => {
     // console.log('加载更多数据咯')
     // 获取下一页的数据
     reqData.value.page++
-    console.log(reqData.value.page);
+    // console.log(reqData.value.page);
 
     const res = await getSubCategoryAPI(reqData.value)
     //新加载的数据与老数据进行拼接合并
