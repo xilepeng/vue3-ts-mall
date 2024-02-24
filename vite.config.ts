@@ -12,6 +12,10 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    host: '127.0.0.1',
+    port: 5173, // 端口
+  },
   plugins: [
     vue(),
     // 配置 element-plus 自动导入插件
